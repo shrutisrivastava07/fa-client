@@ -8,23 +8,19 @@ import { FormBuilder, Validators } from '@angular/forms';
 })
 export class LoanInformationComponent {
   loanInformationForm = this.fb.group({
-    company: null,
 
-    existingAccount: [null, Validators.required],
+    loanAmount: [null, Validators.required],
 
-    accountType: [null, Validators.required],
-    /* postalCode: [null, Validators.compose([
-      Validators.required, Validators.minLength(5), Validators.maxLength(5)])
-    ], */
-    collaterals: ['collateral1', Validators.required]
+    loanType: [null, Validators.required],
+    maturity: ['maturity1', Validators.required]
   });
 
   hasUnitNumber = false;
 
-  accountTypes = [
-    {name: 'Individual Account', abbreviation: 'LAI'},
-    {name: 'Joint Account', abbreviation: 'LAJ'},
-    {name: 'Trust Account', abbreviation: 'LAT'}
+  loanTypes = [
+    {name: 'Maximum Available', abbreviation: 'MAX'},
+    {name: 'Stated Amount', abbreviation: 'STATED'},
+
   ];
 
   constructor(private fb: FormBuilder) {}

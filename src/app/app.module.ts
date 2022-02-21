@@ -12,10 +12,17 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatCardModule } from '@angular/material/card';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BorrowerInformationComponent } from './borrower-information/borrower-information.component';
+import { BorrowerDetailsComponent } from './borrower-details/borrower-details.component';
+import { LoanDocumentsComponent } from './loan-documents/loan-documents.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-    LoanInformationComponent
+    LoanInformationComponent,
+    BorrowerInformationComponent,
+    BorrowerDetailsComponent,
+    LoanDocumentsComponent
   ],
   imports: [
     BrowserModule,

@@ -355,10 +355,17 @@
   <p>Please fill in the below form to start with the loan</p>
 
   <div class="card-container">
-    <mat-slider min="1" max="100" step="1" value="50"></mat-slider>
-    <app-loan-information></app-loan-information>
 
+    <app-borrower-information></app-borrower-information>
   </div>
+
+  <div class="card-container">
+    <app-loan-information></app-loan-information>
+  </div>
+    <div class="card-container">
+    <app-borrower-details></app-borrower-details>
+    </div>
+
 
   <!-- Next Steps -->
   <h2>Next Steps</h2>
