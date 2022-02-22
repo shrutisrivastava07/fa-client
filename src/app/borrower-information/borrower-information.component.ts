@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-borrower-information',
@@ -26,9 +27,12 @@ export class BorrowerInformationComponent {
 
 
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, private router:Router) {}
+
 
   onSubmit(): void {
     alert('Thanks!');
+   // this.router.navigateByUrl('/borrower-details');
+     this.router.navigate(['/loan-information']);
   }
 }

@@ -14,7 +14,7 @@ export class BorrowerDetailsComponent {
     address : [null, Validators.required],
     city : [null, Validators.required],
     state : [null, Validators.required],
-    postacode: [null, Validators.compose([
+    postalCode: [null, Validators.compose([
                                         Validators.required, Validators.minLength(5), Validators.maxLength(5)])
                                       ]
 
