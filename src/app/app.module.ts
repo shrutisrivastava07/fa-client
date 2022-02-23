@@ -15,6 +15,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BorrowerInformationComponent } from './borrower-information/borrower-information.component';
 import { BorrowerDetailsComponent } from './borrower-details/borrower-details.component';
 import { LoanDocumentsComponent } from './loan-documents/loan-documents.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { LoanDocumentsComponent } from './loan-documents/loan-documents.componen
     MatRadioModule,
     MatCardModule,
     ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
